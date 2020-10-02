@@ -1,9 +1,12 @@
 import sys
 
-x = input('Quantos graus? ')
+x = int(input('Quantos graus? '))
 
 def tempo(arg = None):
-    print('hoje está um bom dia')
+    if arg < 10:
+        print('esta frio')
+    else:
+        print('hoje está um bom dia')
 
 
 tempo(x)
